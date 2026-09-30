@@ -13,6 +13,7 @@ on:
 jobs:
   build-documentation:
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
         # Checkout sets up working directory as project root
       - name: Checkout
