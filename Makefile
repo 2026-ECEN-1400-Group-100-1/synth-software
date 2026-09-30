@@ -1,4 +1,4 @@
-.PHONY: build clean check upload
+.PHONY: build clean check upload docs clean-docs
 
 all: build
 
@@ -13,3 +13,10 @@ check:
 
 upload:
 	platformio run --target upload
+
+docs:
+	doxygen .doxyfile
+
+clean-docs:
+	rm -rf docs/html
+	rm -rf docs/latex
