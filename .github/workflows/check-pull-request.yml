@@ -12,6 +12,8 @@ jobs:
   # Test documentation build for proper doxygen coverage
   build-documentation:
     runs-on: ubuntu-latest
+    permissions: 
+      pull-requests: write
     steps:
         # Checkout sets up working directory as project root
       - name: Checkout
